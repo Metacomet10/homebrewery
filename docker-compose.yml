@@ -9,6 +9,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: homebrewery
+    restart: always
     environment:
       MONGODB_URI: mongodb://mongodb/homebrewery
     ports:
